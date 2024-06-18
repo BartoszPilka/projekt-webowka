@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"><!-- kodowanie znakow -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiat na wyciągnięcie ręki - biuro podróży</title>
+    <link rel="stylesheet" href="css/style.css"><!-- dolaczenie arkuszy css -->
+    <link rel="stylesheet" href="css/oferta.css">
+	<script src="js/script.js"></script><!-- dolaczenie arkusza ze skryptami js -->
+</head>
+<body>
+    <div class="nav-bar"><!-- nawigacja po stronie -->
+        <div class="menu-przelacz" onclick="przelaczMenu()">Menu</div>
+		<ul>
+            <li><a href="index.html">Strona główna</a></li>
+			<li><a href="oferta.html">Oferta</a></li>
+			<li><a href="onas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+	<div class="zawartosc">
+		<div class="wyszukiwarka"><!-- div z formularzem pozwalajacym filtrowac wyniki -->
+			<h1>Wyszukaj wymarzony kierunek</h1>
+			<form id="formularz">
+            <div class="krajBox"><!-- div z polami checkbox pozwalajacy wybrac kraje ktore nas interesuja -->
+                <h3>Kraj</h3>
+                <label><input type="checkbox" name="kraj" value="Hiszpania"> Hiszpania</label></br>
+                <label><input type="checkbox" name="kraj" value="Grecja"> Grecja</label></br>
+                <label><input type="checkbox" name="kraj" value="Włochy"> Włochy</label></br>
+                <label><input type="checkbox" name="kraj" value="Austria"> Austria</label></br>
+            </div>
+			
+            <div class="typBox"><!-- div z polami checkbox pozwalajacy wybrac typy wycieczek ktore nas interesuja  -->
+                <h3>Typ</h3>
+                <label><input type="checkbox" name="typ" value="All inclusive"> All Inclusive</label></br>
+                <label><input type="checkbox" name="typ" value="Last minute"> Last Minute</label></br>
+                <label><input type="checkbox" name="typ" value="Kierunek turystyczny"> Kierunek turystyczny</label></br>
+                <label><input type="checkbox" name="typ" value="Zima 2024/2025"> Zima 2024/2025</label></br>
+            </div>
+            <div class="miejscaRadio"><!-- div z polami checkbox pozwalajacy wybrac ilosc miejsc ktore nas interesuja  -->
+                <h3>Dostępne miejsca</h3>
+                <label><input type="radio" name="miejsca" value="1-5">1-5</label>
+                <label><input type="radio" name="miejsca" value="6-10">6-10</label>
+                <label><input type="radio" name="miejsca" value="11+">11+</label>
+            </div>
+            <button type="button" onclick="filtruj()">Filtruj</button><!-- przycisk wywolujacy funkcje filtrujaca wyniki -->
+            <a href="oferta.html"><button type="button">Wyczyść</button></a><!-- resetowanie ustawien -->
+			</form>
+		</div>
+		
+		<div class="wyniki" id="wyniki"><!-- div przechowujacy wyniki filtrowania -->
+			
+		</div>
+	</div>
+	
+	<div class="stopka">
+		<p>Copyright © Świat na wyciągnięcie ręki - biuro podróży 2023</p>
+	</div>
+	
+</body>
+</html>

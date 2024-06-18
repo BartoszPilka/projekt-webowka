@@ -1,0 +1,87 @@
+/* stylowanie diva z mapą oraz samej mapy*/
+iframe
+{
+	float:left;
+	width:50%;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	margin:0 7% 3% 5%;
+}
+
+#mapa h1
+{
+	text-align:left;
+	margin-left:5%;
+}
+
+/* stylowanie diva z informacjami kontaktowymi - numerami telefonu */
+#kontakt
+{
+	margin:0 4% 5% 0;
+}
+
+#kontakt p
+{
+	text-align:center;
+	font-size:110%;
+}
+
+/* stylowanie diva z formularzem kontaktowym  */
+.formularz-kontaktowy
+{
+	font-size:120%;
+	display:inline-block;
+	text-align:center;
+	width:90%;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	margin:0;
+	background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* stylowanie pol tekstowych, inputow */
+textarea
+{
+	height:50%;
+}
+
+input[type="submit"], input[type="reset"]
+{
+    background-color: #276fe3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover
+{
+    background-color: #004494;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea, select
+{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+	text-align:center;
+}
+
+
+/* zapytania o media - stylowanie mapy*/
+@media (max-width: 768px)
+{
+	iframe
+	{
+		margin:0 5% 0 5%;
+		width:90%;
+		height:90%;
+	}
+}

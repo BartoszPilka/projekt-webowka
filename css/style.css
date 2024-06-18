@@ -1,0 +1,203 @@
+/* stylowanie calego ciala strony */
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #2b2321;
+}
+
+/* stylowanie naglowka 1.wszego stopnia */
+h1
+{
+    text-align: center;
+    color: #2b2321;
+}
+
+/* stylowanie diva z nawigacja po stronie */
+.nav-bar
+{
+    background-color: #2b2321;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+	width:100%;
+}
+
+.nav-bar ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar ul li
+{
+    margin: 0 15px;
+}
+
+.nav-bar ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar ul li a:hover
+{
+    text-decoration: underline;
+}
+
+/* stylowanie diva zawierajacego cala glowna zawartosc strony (baner, panel, karta...) oprocz stopki i menu */
+.zawartosc
+{
+	text-align:center;
+	margin:0 3% 0 3%;
+}
+
+/* stylowanie diva z obrazkiem */
+.baner img
+{
+	float:left;
+	height:30%;
+	width:50%;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	margin:3% 7% 3% 5%;
+}
+
+/* stylowanie diva obok obrazka */
+.panel
+{
+	display:inline-block;
+	float:left;
+	margin:3% 4% 10% 0;
+	text-align:left;
+	width:30%;
+	height:300px;
+}
+
+/* stylowanie stopki */
+.stopka
+{
+	clear:both;
+	text-align:center;
+	color:white;
+	width:100%;
+	background-color:#2b2321;
+	height:20%;
+	padding:2%;
+}
+
+/* stylowanie wszystkich przycisko na stronie */
+button
+{
+    background-color: #276fe3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: #004494;
+}
+
+/* zapytania o media*/
+/* minimalna szerokosc okna - 769px */
+@media (min-width: 769px)
+{
+	/* wlaczanie i wylaczanie widocznosci napisu "Menu" gdy rozmiar okna bedzie przechodzil 769px */
+	.menu-przelacz
+	{
+		display:none;
+	}
+	
+	.zawartosc
+	{
+		margin:0 5% 0 5%;
+	}
+	
+}
+
+/* maksymalna szerokosc okna - 768px */
+@media (max-width: 768px)
+{
+	/* stylowanie nawigacji po stronie */
+    .nav-bar 
+	{
+        position: relative;
+    }
+	
+    .nav-bar ul
+	{
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+	
+    .nav-bar ul.active
+	{
+        display: flex;
+    }
+	
+    .nav-bar ul li
+	{
+        margin: 10px 0;
+    }
+	
+    .nav-bar .menu-przelacz
+	{
+        display: block;
+        background-color: #2b2321;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+	
+	.zawartosc
+	{
+		margin:0 5% 0 5%;
+	}
+	
+	.baner img
+	{
+		margin:0 5% 0 5%;
+		width:90%;
+		height:90%;
+	}
+	
+	.panel
+	{
+		text-align:center;
+		width:100%;
+	}
+	
+	.panel button
+	{
+		margin:0 2% 0 2%;
+	}
+	
+    button
+	{
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* maksymalna szerokosc okna - 480px */
+@media (max-width: 480px)
+{
+    body
+	{
+        margin: 10px;
+    }
+}

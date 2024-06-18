@@ -1,0 +1,159 @@
+/* stylowanie diva z formularzem (wyszukiwarką) oraz diva z wynikami filtrowania */
+.wyszukiwarka
+{
+	text-align:left;
+	float:left;
+	width:16%;
+	border:1px solid lightgrey;
+	margin:0;
+	background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wyszukiwarka, .wyniki
+{
+	float:left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wyniki
+{
+	width:76%;
+	margin-left:2%;
+}
+
+.wyszukiwarka h2, .wyniki h2
+{
+    margin-bottom: 20px;
+}
+
+.wyszukiwarka button
+{
+	margin-top:10px;
+}
+
+.wyszukiwarka div
+{
+    margin-bottom: 15px;
+}
+
+.wyszukiwarka label
+{
+	clear:both;
+}
+
+/* stylowanie divów opisujacych kierunki wycieczek np(Hiszpania - Barcelona....) */
+.kierunek 
+{
+	clear:both;
+	display: inline-block;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+	height:auto;
+}
+
+.kierunek h3
+{
+    margin-top: 0;
+}
+
+.kierunek img
+{
+	float:left;
+	height:30%;
+	width:30%;
+	margin-right:2%;
+}
+
+.kierunek .dostepneMiejsca
+{
+	margin-top:5%;
+	clear:both;
+}
+
+.kierunek button
+{
+	float:right;
+}
+
+
+/* zapytania o media */
+/* minimalna szerokosc okna - 1025px */
+@media (min-width: 1025px)
+{
+	.wyniki
+	{
+		width:70%;
+	}
+	
+	.zawartosc
+	{
+		margin:0 5% 0 5%;
+	}
+}
+
+/*  minimalna szerokosc okna - 769px  */
+@media (min-width: 769px)
+{
+	.wyniki
+	{
+		width:68%;
+	}
+	
+	.wyszukiwarka
+	{
+		width: 18%;
+		font-size:80%;
+	}
+}
+
+/*  maksymalna szerokosc okna - 768px  */
+@media (max-width: 768px)
+{
+	.wyszukiwarka
+	{
+		clear:both;
+		width:90%;
+		padding: 2% 5% 2% 5%;
+	}
+	
+	.wyszukiwarka div
+	{
+		float:left;
+		font-size:90%;
+		text-align:center;
+		margin:0 2% 0 2%;
+	}
+	
+	.kierunek
+	{
+		width:90%;
+	}
+	
+	.wyniki
+	{
+		width:90%;
+	}
+	
+	.wyniki img
+	{
+		height:100%;
+		width:100%;
+		margin-bottom:5%;
+	}
+	
+	/* stylowanie diva zawierajacego formularz */
+	.formularz div
+	{
+        margin-bottom: 10px;
+    }
+}

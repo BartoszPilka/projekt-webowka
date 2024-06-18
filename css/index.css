@@ -1,0 +1,60 @@
+/* ustawienie diva z informacjami o divie (zimie 2024/25) */
+#zima
+{
+	clear:both;
+	margin-left:5%;
+}
+
+/*  */
+.karta
+{
+	float:left;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	padding:10px;
+	width:25%;
+	margin:0 2.5% 5%;
+}
+
+/* stylowania akapitow w dwoch divach na dole strony index.html */
+#lastminute p
+{
+	padding-bottom:5%;
+}
+
+#allinclusive p
+{
+	padding-bottom:10%;
+}
+
+
+/* zapytania o media */
+/* stylowanie w przypadku maksymalnej szerokosci strony 768px*/
+@media (max-width: 768px)
+{
+	.karta
+	{
+		float:left;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		padding:10px;
+		width:22.5%;
+		margin:0 2.5% 5%;
+	}
+	
+	#lastminute p
+	{
+		padding-bottom:5%;
+	}
+
+	#allinclusive p
+	{
+		padding-bottom:10%;
+	}
+
+	#zima
+	{
+		clear:both;
+		margin-left:5%;
+	}
+}

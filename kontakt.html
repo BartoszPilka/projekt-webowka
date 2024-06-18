@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"><!-- kodowanie znakow -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiat na wyciągnięcie ręki - biuro podróży</title><!-- tytul strony -->
+    <link rel="stylesheet" href="css/style.css"><!-- dolaczenie arkuszy css -->
+    <link rel="stylesheet" href="css/kontakt.css">
+	<script src="js/script.js"></script><!-- dolaczenie skryptu -->
+</head>
+<body>
+    <div class="nav-bar"><!-- menu nawigacyjne -->
+        <div class="menu-przelacz" onclick="przelaczMenu()">Menu</div>
+		<ul>
+            <li><a href="index.html">Strona główna</a></li>
+			<li><a href="oferta.html">Oferta</a></li>
+			<li><a href="onas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+	<div class="zawartosc">
+		<div class="baner" id="mapa"><!-- div z mapa -->
+			<h1>Tutaj nas znajdziesz</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.0365757457275!2d22.546263376177343!3d51.236821271753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225770b90ed75f%3A0x1b6d4cc1142112fa!2sWydzia%C5%82%20Elektrotechniki%20i%20Informatyki%20Politechniki%20Lubelskiej!5e0!3m2!1spl!2spl!4v1717877103282!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!-- skopiowany kod html umozliwiajacy wstawienie mapy -->
+		</div>
+		
+		<div class="panel" id="kontakt"><!-- div z informacjami kontaktowymi -->
+			<h1>Kontakt</h1>
+			<p>
+				Telefon: +48 123456789</br>
+				pn-pt 8:00-18:00</br>
+				sb 8:00-14:00</br>
+				nd 10:00-14:00</br>
+			</p>
+			
+			<p>
+				Telefon: +48 987654321</br>
+				pn-pt 8:00-18:00</br>
+				
+			</p>
+		</div>
+		
+		<div class="formularz-kontaktowy">
+			<h1>Formularz kontaktowy</h1>
+			<form><!-- forumlarz walidowany na poziomie html -->
+				<p>
+					Imię*:</br>
+					<input type="text" name="imie" required pattern="[A-Za-z]+(?: [A-Za-z]+)?"></br><!-- inputy o roznych typach i patternach zeby mozna bylo sprawdzic poprawnosc wprowadzanych danych (wymagane = required) -->
+					Nazwisko*:</br>
+					<input type="text" name="nazwisko" required pattern="[A-Za-z]+(?:-[A-Za-z]+)?"></br>
+					Email*:</br>
+					<input type="email" name="email" required placeholder="twojeimie@przyklad.pl"></br>
+				</p>
+				<p>
+					<input type="radio" name="kto" value="Odbyłem wycieczkę" checked>Odbyłem wycieczkę</br><!-- dwa pola radio, jedno zaznaczone aby nie mozna bylo nie zaznaczyc nic -->
+					<input type="radio" name="kto" value="Planuję pojechać na wycieczkę">Planuję pojechać na wycieczkę</br>
+					
+					</br>
+					Rodzaj zapytania*:</br><!-- select wymagany -->
+					<select name="pytanie" required>
+						<option value="koszt">Koszt</option>
+						<option value="plan-wycieczki">Plan wycieczki</option>
+						<option value="reklamacja/skarga">Reklamacja/skarga</option>
+						<option value="inne">Inne</option>
+					</select></br>
+					<br>
+					<textarea name="tresc" placeholder="Tu wpisz swoje zapytanie" required></textarea></br><!-- placeholder = przykladowy tekst znajdujacy sie w srodku pola tekstowego, znika po napisaniu czegokolwiek -->
+					
+					<input type="checkbox" name="akceptacja" required>Akceptuję regulamin*</br></br><!-- wymagana akceptacja regulaminu -->
+					<input type="submit" value="Wyślij"><!-- przycisk zatwierdzajcy wpisane dane -->
+					<input type="reset" value="Wyczyść"><!-- przycisk resetujacy dane w formularzu -->
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	<div class="stopka">
+		<p>Copyright © Świat na wyciągnięcie ręki - biuro podróży 2023</p>
+	</div>
+</body>
+</html>

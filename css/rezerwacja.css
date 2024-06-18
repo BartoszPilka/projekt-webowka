@@ -1,0 +1,48 @@
+/* stylowanie diva zawierajacego formularz z rezerwacja wycieczki */
+.rezerwacja
+{
+	font-size:120%;
+	display:inline-block;
+	text-align:center;
+	width:90%;
+	border:1px solid lightgrey;
+	border-radius:10px;
+	margin:0;
+	background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* stylowanie pol tekstowych, inputow */
+textarea
+{
+	height:50%;
+}
+
+input[type="submit"], input[type="reset"]
+{
+    background-color: #276fe3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover
+{
+    background-color: #004494;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea, select
+{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+	text-align:center;
+}

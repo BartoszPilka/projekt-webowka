@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <meta charset="UTF-8"> <!--kodowanie znakow-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiat na wyciągnięcie ręki - biuro podróży</title>
+    <link rel="stylesheet" href="css/style.css"><!--dolaczenie css-->
+    <link rel="stylesheet" href="css/rezerwacja.css">
+	<script src="js/script.js"></script><!--dolaczenie pliku z funkcjami js-->
+</head>
+<body>
+    <div class="nav-bar"><!--responsywna nawigacja-->
+        <div class="menu-przelacz" onclick="przelaczMenu()">Menu</div><!--wywolanie funkcji odpowiadajacej za pojawienie sie/wygasniecie napisu 'Menu'-->
+		<ul>
+            <li><a href="index.html">Strona główna</a></li>
+			<li><a href="oferta.html">Oferta</a></li>
+			<li><a href="onas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+	<div class="zawartosc"><!--glowna czesc podstrony-->
+		<div class="rezerwacja">
+			<h1>Rezerwacja wycieczki</h1>
+			<form><!--formularz zwalidowany na poziomie html-->
+				<p>
+					Kierunek</br><input type="text" value="Madryt" readonly>
+				</p>
+				<p>
+					Imię*:</br>
+					<input type="text" name="imie" required pattern="[A-Za-z]+(?: [A-Za-z]+)?"></br><!--patterny odpowiadajace za sprawdzenie poprawnosci danych-->
+					Nazwisko*:</br>
+					<input type="text" name="nazwisko" required pattern="[A-Za-z]+(?:-[A-Za-z]+)?"></br>
+					Email*:</br>
+					<input type="email" name="email" required placeholder="twojeimie@przyklad.pl"></br>
+					Ilość osób*</br><input type="number" name="iloscOsob" required max="2" min="1"></br>
+				</p>
+				<p>
+					Płatność*</br><!--jedna opcja domyslnie zaznaczona zeby nie mozna bylo odznaczyc-->
+					<input type="radio" name="platnosc" value="karta" checked>Karta 
+					<input type="radio" name="platnosc" value="blik">Blik 
+					<input type="radio" name="platnosc" value="gotowka">Gotówka w biurze 
+					</br></br>
+					<input type="checkbox" name="akceptacja" required>Akceptuję regulamin*</br></br>
+					<input type="submit" value="Zamawiam z obowiązkiem zapłaty">
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	<div class="stopka">
+		<p>Copyright © Świat na wyciągnięcie ręki - biuro podróży 2023</p>
+	</div>
+</body>
+</html>

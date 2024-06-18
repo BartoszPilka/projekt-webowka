@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"><!-- kodowanie znakow -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiat na wyciągnięcie ręki - biuro podróży</title><!-- tytul stwony wyswietlajacy sie na karcie przegladarki -->
+    <link rel="stylesheet" href="css/style.css"><!-- dolaczenie arkuszy css -->
+    <link rel="stylesheet" href="css/index.css">
+	<script src="js/script.js"></script><!-- dolaczenie pliku z funkcjami js -->
+</head>
+<body>
+    <div class="nav-bar"><!-- nawigacja -->
+        <div class="menu-przelacz" onclick="przelaczMenu()">Menu</div>
+		<ul>
+            <li><a href="index.html">Strona główna</a></li>
+			<li><a href="oferta.html">Oferta</a></li>
+			<li><a href="onas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+	<div class="zawartosc">
+		<div class="baner"><!-- baner ze zdjeciem -->
+			<img src="img/baner.jpg" alt="baner">
+		</div>
+		
+		<div class="panel"><!-- panel z opisem obok zdjecia -->
+			<h1>Przeżyj z nami przygodę życia!</h1>
+			<p>
+				Odkryj niezapomniane wycieczki z naszą firmą! Oferujemy destynacje, które dostarczą Ci niezapomnianych wrażeń i relaksu. Nasz zespół ekspertów zadba o każdy szczegół, abyś mógł cieszyć się beztroskim wypoczynkiem. Niezależnie od tego, czy marzysz o rajskich plażach, górskich wędrówkach, czy zwiedzaniu historycznych miejsc – mamy coś specjalnego dla Ciebie.
+			</p>
+			<a href="oferta.html"><button>Zarezerwuj już teraz!</button></a>
+		</div>
+		
+		<div class="karta" id="zima"><!-- blok na dole strony z informacjami o ofercie -->
+			<h2>Zima 2024/2025</h2>
+			<p>
+				Zapraszamy na wyjątkowe zimowe wyjazdy w sezonie 2024/2025, gdzie czekają na Ciebie malownicze stoki narciarskie, luksusowe kurorty i świąteczna atmosfera. Oferujemy niezapomniane chwile w najlepszych ośrodkach zimowych, zapewniając komfort, relaks i mnóstwo atrakcji dla całej rodziny.
+			</p>
+			
+			<hr><!-- pozioma linia oddzielajaca tekst od przycisku -->
+			<button onclick="location.href='oferta.html?kategoria=zima'">Więcej informacji</button><!-- przycisk dzieki ktoremu przechodzimy do strony 'oferta.html' i od razu mamy wyswietlone wyniki kierunkow wycieczek o typie 'zima 2024/2025' -->
+		</div>
+		
+		<div class="karta" id="lastminute"><!-- blok na dole strony z informacjami o ofercie -->
+			<h2>Last Minute</h2>
+			<p>
+				Nie przegap naszych ofert last minute, które pozwolą Ci spontanicznie wyruszyć na wymarzone wakacje w atrakcyjnych cenach! Skorzystaj z okazji i zarezerwuj już dziś, by cieszyć się niezapomnianymi przygodami bez zbędnego planowania.
+			</p>
+			<hr><!-- pozioma linia oddzielajaca tekst od przycisku -->
+			<button onclick="location.href='oferta.html?kategoria=lastminute'">Więcej informacji</button><!-- przycisk dzieki ktoremu przechodzimy do strony 'oferta.html' i od razu mamy wyswietlone wyniki kierunkow wycieczek o typie 'last minute' -->
+		</div>
+		
+		<div class="karta" id="allinclusive"><!-- blok na dole strony z informacjami o ofercie -->
+			<h2>All Inclusive</h2>
+			<p>
+				Zarezerwuj wakacje all inclusive i ciesz się beztroskim wypoczynkiem, gdzie wszystko jest wliczone w cenę! Nasze oferty obejmują luksusowe zakwaterowanie, wyśmienite posiłki, napoje oraz liczne atrakcje na miejscu.
+			</p>
+			<hr><!-- pozioma linia oddzielajaca tekst od przycisku -->
+			<button onclick="location.href='oferta.html?kategoria=allinclusive'">Więcej informacji</button><!-- przycisk dzieki ktoremu przechodzimy do strony 'oferta.html' i od razu mamy wyswietlone wyniki kierunkow wycieczek o typie 'all inclusive' -->
+		</div>
+	</div>
+	
+	<div class="stopka"><!-- stopka -->
+		<p>Copyright © Świat na wyciągnięcie ręki - biuro podróży 2023</p>
+	</div>
+</body>
+</html>
